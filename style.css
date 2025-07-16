@@ -340,3 +340,65 @@ ul a{
     justify-content: center;
     align-items: center;
 }
+/* Tablets and below */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .panel {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-section {
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+    }
+
+    .shop-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Phones and small devices */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo-bar {
+        width: 80px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .shop-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
