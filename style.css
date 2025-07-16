@@ -371,34 +371,83 @@ ul a{
     }
 }
 
-/* Phones and small devices */
+/* ========== MOBILE-ONLY RESPONSIVE STYLES (max-width: 600px) ========== */
 @media (max-width: 600px) {
+    /* Navbar */
     .navbar {
         flex-direction: column;
         height: auto;
+        gap: 10px;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center;
     }
 
+    /* Logo */
     .logo-bar {
-        width: 80px;
+        width: 70px;
     }
 
+    .logo {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* Search Bar */
     .search-bar {
         flex-direction: column;
+        width: 90%;
+        margin: 10px auto;
         align-items: stretch;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .search-icon {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Panel */
+    .panel {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Shop Section */
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .box {
         width: 100%;
     }
 
-    .shop-section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .panel {
-        display: flex;
+    /* Footer */
+    footer {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 10px;
     }
 
-    footer {
-        text-align: center;
+    /* Optional Padding Tweaks */
+    body {
+        padding: 0 10px;
     }
 }
